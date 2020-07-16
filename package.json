@@ -1,5 +1,5 @@
 {
-  "name": "base",
+  "name": "base-window",
   "version": "0.1.0",
   "main": "public/electron.js",
   "private": true,
@@ -16,9 +16,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-start": "electron .",
-    "preelectron-pack": "npm run build",
-    "electron-pack": "electron-builder --win -c.extraMetadata.main=build/electron.js"
+    "electron": "electron .",
+    "pack": "npm run build",
+    "electron-build": "electron-builder --win -c.extraMetadata.main=build/electron.js"
   },
   "build": {
     "appId": "nonExistentID",
